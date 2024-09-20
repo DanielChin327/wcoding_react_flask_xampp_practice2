@@ -3,7 +3,6 @@ from flask_cors import CORS #preventing the Cors errors: prevents errors during 
 import sqlalchemy
 
 
-
 app = Flask(__name__)
 
 db = sqlalchemy.create_engine("mariadb+pymysql://root:@localhost:3307/simpledb")
@@ -12,8 +11,6 @@ db = sqlalchemy.create_engine("mariadb+pymysql://root:@localhost:3307/simpledb")
 @app.route("/")
 def hello():
     return "Hello World"
-
-
 
 
 @app.route('/api/comments', methods = ["GET"])
