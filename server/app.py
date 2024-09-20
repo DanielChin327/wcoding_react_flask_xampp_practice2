@@ -110,31 +110,6 @@ def delete_comment(comment_id):
 
 
 
-# @app.route('/api/comment/<account_name>', methods = ["PUT"])
-# # @cross_origin()
-# def update_comment_route():
-#     data = request.get_json()
-#     print(data)
-
-#     comment_id = data.get("comment_id")
-#     comment = data.get("comment_text")
-
-#     update_comment(comment_id, comment)
-
-#     return jsonify({"message": "Comment successfully updated"}), 200
-
-# @app.route("/api/comment/", methods = ["DELETE"])
-# # @cross_origin()
-# def delete_comment_route():
-#     data= request.get_json()
-#     print(data)
-
-#     comment_id = data.get("comment_id")
-#     comment_text = data.get("comment_text")
-
-#     delete_comment(comment_id, comment_text)
-
-#     return jsonify({"message": "Comment successfully deleted"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
